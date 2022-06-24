@@ -4,41 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zay Smith Motion Design</title>
+    <title>Zay Smith Graphic Design</title>
     <style>
         body {
             background-color: black;
         }
 
-        img {
-            width: 100%;
+        #gallery {
+            line-height: 0;
+            column-count: 2;
+            column-gap: 5px;
         }
 
-        #record {
-            max-height: 80%;
-            display: block;
-            width: auto;
-            margin-left: auto;
-            margin-right: auto;
+        #gallery img {
+            width: 100% !important;
+            height: auto !important;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600) {
+            #gallery {
+                column-count: 1;
+            }
+
+            #gallery img {
+                width: auto !important;
+                height: 100% !important;
+                margin-bottom: 5px;
+            }
         }
     </style>
 </head>
 
 <body style="background-color: #000000;">
-    <div class="row">
-        <div class="column">
-            <img src="PortfolioGIFs/EAS.gif">
-            <img src="PortfolioGIFs/matchbox.gif">
-            <img src="PortfolioGIFs/player_combined.gif" id="record">
-            <img src="PortfolioGIFs/ReverseCard.gif">
-            <img src="PortfolioGIFs/eyes.gif">
-            <img src="PortfolioGIFs/sphere.gif">
-            <img src="PortfolioGIFs/polaroid.gif">
-            <img src="PortfolioGIFs/OUIJA.gif">
-            <img src="PortfolioGIFs/mac_ae.gif">
-            <img src="PortfolioGIFs/LibApp.gif">
-            <img src="PortfolioGIFs/Boom w- CRT.gif">
-        </div>
+    <div id="gallery">
+        <img src="PortfolioGIFs/player_combined.gif">
+        <img src="PortfolioGIFs/EAS.gif">
+        <img src="PortfolioGIFs/matchbox.gif">
+        <img src="PortfolioGIFs/ReverseCard.gif">
+        <img src="PortfolioGIFs/eyes.gif">
+        <img src="PortfolioGIFs/sphere.gif">
+        <img src="PortfolioGIFs/polaroid.gif">
+        <img src="PortfolioGIFs/OUIJA.gif">
+        <img src="PortfolioGIFs/mac_ae.gif">
+        <img src="PortfolioGIFs/LibApp.gif">
+        <img src="PortfolioGIFs/Boom w- CRT.gif">
     </div>
 </body>
 
